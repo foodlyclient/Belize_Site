@@ -240,6 +240,40 @@ main {
     position: relative;
 }
 
+.membre-nom {
+    color: #ffcc00;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.description-groupe {
+    text-align: center;
+    color: #ffcc00;
+    margin: 1rem 0 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description-groupe a {
+    color: #fff;
+    text-decoration: none;
+    background: #ffcc00;
+    color: #000;
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.description-groupe a:hover {
+    background: #fff;
+    transform: scale(1.05);
+}
+
 /* Rangs */
 .rangs {
     max-width: 800px;
@@ -533,6 +567,71 @@ main {
 .cta-button:hover {
     background: #fff;
     transform: scale(1.05);
+}
+
+.join-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: rgba(255, 204, 0, 0.12);
+    border: 1px solid rgba(255, 204, 0, 0.35);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    max-width: 1100px;
+    margin: 2rem auto;
+}
+
+.join-card-left,
+.join-card-right {
+    text-align: left;
+}
+
+.join-card-left h2,
+.join-card-right h3 {
+    color: #ffcc00;
+    margin-bottom: 1rem;
+}
+
+.join-card-left p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.join-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 1rem 1.6rem;
+    border: 2px solid #ffcc00;
+    border-radius: 999px;
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.join-link:hover {
+    background: rgba(255, 204, 0, 0.2);
+    color: #fff;
+    transform: scale(1.02);
+}
+
+.join-card-right ol {
+    margin: 0;
+    padding-left: 1.3rem;
+    line-height: 1.8;
+}
+
+.join-card-right li {
+    margin-bottom: 0.9rem;
+}
+
+@media (max-width: 900px) {
+    .join-card {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Objectifs */
