@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NationGlory - Assistance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="https://static.nationsglory.fr/site.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+    </video>
+
+    <nav>
+        <div class="nav-container">
+            <img src="drapeau.svg" alt="Drapeau" class="logo">
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="membres.html">Membres</a></li>
+                <li><a href="rangs.html">Rangs</a></li>
+                <li><a href="support.html">Assistance</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="support">
+            <h1>Assistance</h1>
+            <p>Besoin d'aide ? Contactez notre équipe de support pour toute question ou problème.</p>
+
+            <form class="support-form">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+
+            <div class="faq">
+                <h2>FAQ</h2>
+                <details>
+                    <summary>Comment rejoindre la communauté ?</summary>
+                    <p>Visitez la page Accueil et cliquez sur "Rejoindre la communauté".</p>
+                </details>
+                <details>
+                    <summary>Comment accepter une quête ?</summary>
+                    <p>Allez sur la page Quêtes et cliquez sur "Accepter" pour une quête.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <div id="notifications"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

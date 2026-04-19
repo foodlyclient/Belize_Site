@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NationGlory - Quêtes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="https://static.nationsglory.fr/site.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+    </video>
+
+    <nav>
+        <div class="nav-container">
+            <img src="drapeau.svg" alt="Drapeau" class="logo">
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="membres.html">Membres</a></li>
+                <li><a href="rangs.html">Rangs</a></li>
+                <li><a href="support.html">Assistance</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="mission-briefing">
+            <h1>Mission Briefing</h1>
+            <p>Découvrez les quêtes disponibles pour contribuer à notre communauté. Choisissez une catégorie ci-dessous pour commencer votre mission.</p>
+        </section>
+
+        <section id="quete-en-cours" class="quete-en-cours" style="display: none;">
+            <h2>Quête en Cours</h2>
+            <div id="quete-details"></div>
+            <button id="abandonner-quete">Abandonner la Quête</button>
+        </section>
+
+        <section class="quetes-section">
+            <h2>Ressources</h2>
+            <div class="cartes-quetes">
+                <div class="quete-carte">
+                    <h3>�️ Gardien des Ressources</h3>
+                    <p>En tant que protecteur des mines nationales, assurez-vous que nos précieuses ressources ne tombent pas entre de mauvaises mains.</p>
+                    <p><strong>Objectif :</strong> Miner 200 blocs de diamant ou de fer dans les zones désignées et sécuriser 10 coffres de stockage contre les raids.</p>
+                    <p><strong>Récompense :</strong> 300 pièces d'or et un kit de protection (armure en diamant partielle).</p>
+                    <a href="#" class="quete-link">Accepter</a>
+                </div>
+                <div class="quete-carte">
+                    <h3>🚛 Commerçant des Routes</h3>
+                    <p>Facilitez le commerce interne en établissant des routes sûres et efficaces pour nos marchands.</p>
+                    <p><strong>Objectif :</strong> Construire 5 routes commerciales (au moins 100 blocs chacune) reliant les villes principales et transporter 50 stacks de marchandises via des chariots.</p>
+                    <p><strong>Récompense :</strong> 350 pièces d'or et un chariot enchanté pour vos voyages personnels.</p>
+                    <a href="#" class="quete-link">Accepter</a>
+                </div>
+                <div class="quete-carte">
+                    <h3>🗺️ Explorateur des Terres Inconnues</h3>
+                    <p>Étendez notre territoire en découvrant de nouvelles ressources et en cartographiant des zones vierges.</p>
+                    <p><strong>Objectif :</strong> Explorer et mapper 3 biomes inexplorés, collecter 100 échantillons de ressources rares (comme des minerais exotiques) et établir un avant-poste temporaire.</p>
+                    <p><strong>Récompense :</strong> 300 pièces d'or et une carte enchantée révélant des trésors cachés.</p>
+                    <a href="#" class="quete-link">Accepter</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="quetes-section">
+            <h2>Publicité et promotion</h2>
+            <div class="cartes-quetes">
+                <div class="quete-carte">
+                    <h3>🤝 Diplomate des Alliances</h3>
+                    <p>Renforcez nos liens avec les nations voisines pour assurer la paix et le commerce mutuel.</p>
+                    <p><strong>Objectif :</strong> Négocier et signer 3 accords commerciaux avec d'autres pays (via des contrats en jeu) et organiser une réunion diplomatique avec au moins 5 participants.</p>
+                    <p><strong>Récompense :</strong> 250 pièces d'or et un bonus diplomatique (+20% de réduction sur les échanges inter-nations).</p>
+                    <a href="#" class="quete-link">Accepter</a>
+                </div>
+                <div class="quete-carte">
+                    <h3>🏰 Défenseur des Remparts</h3>
+                    <p>Protégez notre capitale des menaces extérieures en fortifiant nos défenses stratégiques.</p>
+                    <p><strong>Objectif :</strong> Construire ou renforcer 10 murs de défense (avec pièges et tourelles) autour de la zone capitale et repousser une invasion simulée.</p>
+                    <p><strong>Récompense :</strong> 500 pièces d'or et un titre de "Garde d'Honneur" avec immunité temporaire contre les raids.</p>
+                    <a href="#" class="quete-link">Accepter</a>
+                </div>
+                <div class="quete-carte">
+                    <h3>🕊️ Ambassadeur de la Paix</h3>
+                    <p>Médiez les conflits entre factions pour maintenir l'harmonie géopolitique.</p>
+                    <p><strong>Objectif :</strong> Résoudre 3 disputes territoriales via des négociations roleplay et établir un traité de paix avec une faction rivale.</p>
+                    <p><strong>Récompense :</strong> 300 pièces d'or et un badge diplomatique offrant des alliances automatiques.</p>
+                    <a href="#" class="quete-link">Accepter</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="quetes-section">
+            <h2>Réussites exemplaires</h2>
+            <div class="cartes-quetes">
+                <div class="quete-carte">
+                    <h3>�️ Architecte de la Cité</h3>
+                    <p>Contribuez à l'expansion urbaine en construisant des bâtiments qui symbolisent la grandeur de notre nation.</p>
+                    <p><strong>Objectif :</strong> Construire une mairie complète (avec salle de réunion, bureaux et décoration) dans la zone urbaine assignée, en utilisant au moins 500 blocs.</p>
+                    <p><strong>Récompense :</strong> 400 pièces d'or et un permis de construction prioritaire pour vos projets personnels.</p>
+                    <a href="#" class="quete-link">Accepter</a>
+                </div>
+                <div class="quete-carte">
+                    <h3>⚙️ Ingénieur des Infrastructures</h3>
+                    <p>Développez les infrastructures vitales pour soutenir la croissance de notre nation.</p>
+                    <p><strong>Objectif :</strong> Construire un système de transport (rails ou canaux) reliant 4 villes et installer 10 lampes solaires pour l'éclairage public.</p>
+                    <p><strong>Récompense :</strong> 450 pièces d'or et des outils enchantés pour la construction.</p>
+                    <a href="#" class="quete-link">Accepter</a>
+                </div>
+                <div class="quete-carte">
+                    <h3>🏴 Stratège des Conquêtes</h3>
+                    <p>Planifiez et exécutez des expansions territoriales pour étendre l'influence de notre nation.</p>
+                    <p><strong>Objectif :</strong> Conquérir et sécuriser 2 territoires neutres (via des batailles simulées) et établir des colonies avec au moins 50 blocs construits.</p>
+                    <p><strong>Récompense :</strong> 600 pièces d'or et un drapeau national personnalisé pour votre base.</p>
+                    <a href="#" class="quete-link">Accepter</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="quetes-section">
+            <h2>FAQ des quêtes</h2>
+            <div class="cartes-quetes">
+                <div class="quete-carte">
+                    <h3>💰 Économiste des Taxes</h3>
+                    <p>Gérez les finances nationales en collectant et optimisant les taxes pour le développement collectif.</p>
+                    <p><strong>Objectif :</strong> Collecter 1000 pièces d'or en taxes auprès des citoyens et investir dans 2 projets économiques (comme une ferme ou une mine améliorée).</p>
+                    <p><strong>Récompense :</strong> 400 pièces d'or et un bonus économique (+15% de revenus passifs).</p>
+                    <a href="#" class="quete-link">Accepter</a>
+                </div>
+                <div class="quete-carte">
+                    <h3>📦 Logisticien des Stocks</h3>
+                    <p>Organisez la logistique pour assurer un approvisionnement constant en ressources essentielles.</p>
+                    <p><strong>Objectif :</strong> Construire un entrepôt central avec 20 coffres organisés, stocker 500 unités de nourriture et distribuer des rations à 10 citoyens.</p>
+                    <p><strong>Récompense :</strong> 250 pièces d'or et un inventaire étendu (slots supplémentaires).</p>
+                    <a href="#" class="quete-link">Accepter</a>
+                </div>
+                <div class="quete-carte">
+                    <h3>🌾 Protecteur des Cultures</h3>
+                    <p>Préservez et développez l'agriculture pour nourrir notre peuple et renforcer l'autosuffisance.</p>
+                    <p><strong>Objectif :</strong> Planter et récolter 1000 cultures (blé, carottes, etc.) dans des fermes désignées et défendre contre 2 raids de mobs.</p>
+                    <p><strong>Récompense :</strong> 350 pièces d'or et des graines enchantées pour des récoltes abondantes.</p>
+                    <a href="#" class="quete-link">Accepter</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="notifications"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
